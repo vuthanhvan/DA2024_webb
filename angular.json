@@ -28,13 +28,15 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets/",
+                "output": "/assets/"
               }
             ],
             "styles": [
-              "src/styles.scss"
+                 "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [ "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/slick-carousel/slick/slick.min.js"]
           },
           "configurations": {
             "production": {
@@ -87,16 +89,23 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets/",
+                "output": "/assets/"
               }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

@@ -1,0 +1,400 @@
+<nav class="navbar navbar-expand-lg navigation fixed-top sticky"  id="navbar">
+    <div class="container">
+        <a class="navbar-logo" routerLink="/">
+            <img src="assets/images/bia.jpg" alt="" height="55" class="logo logo-dark">
+            
+        </a>
+            <h3 class="p-4">yourInformation</h3>
+        <!-- <button type="button" class="btn btn-sm px-3 font-size-16 d-lg-none header-item" data-toggle="collapse" data-target="#topnav-menu-content" (click)="toggleMenu()">
+            <i class="fa fa-fw fa-bars"></i>
+        </button> -->
+
+        <div class="collapse navbar-collapse" id="topnav-menu-content">
+            <ul class="navbar-nav ms-auto" id="topnav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript: void(0);"
+                    (click)="scrollToElement('home')"  >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript: void(0);" 
+                    (click)="scrollToElement('about')"  
+                  
+                    >About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript: void(0);" 
+                    (click)="scrollToElement('features')" >Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript: void(0);" 
+                    (click)="scrollToElement('faqs')" >FAQs</a>
+                </li>
+            </ul>
+            <div class="my-2 ms-lg-2">
+                <a routerLink="/auth/login" class="btn btn-outline-success w-xs">Sign in</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div appScrollspy  >
+    <!-- (sectionChange)="onSectionChange($event)" -->
+    <!-- [spiedTags]="['SECTION']" -->
+    <section class="section hero-section bg-ico-hero" id="home">
+        <div class="bg-overlay bg-primary"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="text-white-50">
+                        <h1 class="text-white fw-semibold mb-3 hero-title">Everything you are. In one, simple link in bio.</h1>
+                        <p class="font-size-14">Join  people using  Your information for their link in bio. One link to help you share everything you create, curate and sell from your Instagram, TikTok, Twitter, YouTube and other social media profiles.</p>
+
+                        <div class="button-items mt-4 d-flex gap-2">
+                            <a href="javascript: void(0);" class="btn btn-success">Get Whitepaper</a>
+                            <a href="javascript: void(0);" class="btn btn-light">How it work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-8 col-sm-10 ms-lg-auto">
+                    <img src="../../assets/images/banner_na.png" alt="" height="400" style="border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- hero section end -->
+
+    <!-- currency price section start -->
+    <section class="section bg-white p-0">
+        <div class="container">
+            <div class="currency-price">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-xs">
+                                            <span class="avatar-title rounded-circle bg-warning-subtle text-warning font-size-18">
+                                                <i class="mdi mdi-bitcoin"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="text-muted">Create and customize</p>
+                                        <h5>in minutes</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-xs">
+                                            <span class="avatar-title rounded-circle bg-primary-subtle text-primary font-size-18">
+                                                <i class="mdi mdi-ethereum"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="text-muted">Share easily</p>
+                                        <h5>Add your unique URL to all</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <div class="avatar-xs">
+                                            <span class="avatar-title rounded-circle bg-info-subtle text-info font-size-18">
+                                                <i class="mdi mdi-litecoin"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="text-muted">Analyze your audience</p>
+                                        <h5>and keep your followers engaged</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- currency price section end -->
+
+
+    <!-- about section start -->
+    <section class="section pt-4 bg-white" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mb-5">
+                        <div class="small-title">About us</div>
+                        <h4>What is Your-information ?</h4>
+                    </div>
+                </div>
+                <div class="text-muted text-center">
+                    <h4>
+                    Linktree is a tool to help you share everything you are, in one simple link – making your online content more discoverable, easier to manage and more likely to convert. Here’s where it all began </h4>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="row">
+                <div class="col-lg-12">  >
+                    <!-- <ngx-slick-carousel class="events navs-carousel" [config]="aboutConfig" -->
+                        <div ngxSlickItem>
+                            <div class="item">
+                                <div class="client-images">
+                                    <img src="assets/images/clients/1.png" alt="client-img" class="mx-auto img-fluid d-block">
+                                </div>
+                            </div>
+                        </div>
+                        <div ngxSlickItem>
+                            <div class="item">
+                                <div class="client-images">
+                                    <img src="assets/images/clients/2.png" alt="client-img" class="mx-auto img-fluid d-block">
+                                </div>
+                            </div>
+                        </div>
+                        <div ngxSlickItem>
+                            <div class="item">
+                                <div class="client-images">
+                                    <img src="assets/images/clients/3.png" alt="client-img" class="mx-auto img-fluid d-block">
+                                </div>
+                            </div>
+                        </div>
+                        <div ngxSlickItem>
+                            <div class="item">
+                                <div class="client-images">
+                                    <img src="assets/images/clients/4.png" alt="client-img" class="mx-auto img-fluid d-block">
+                                </div>
+                            </div>
+                        </div>
+                        <div ngxSlickItem>
+                            <div class="item">
+                                <div class="client-images">
+                                    <img src="assets/images/clients/5.png" alt="client-img" class="mx-auto img-fluid d-block">
+                                </div>
+                            </div>
+                        </div>
+                        <div ngxSlickItem>
+                            <div class="item">
+                                <div class="client-images">
+                                    <img src="assets/images/clients/6.png" alt="client-img" class="mx-auto img-fluid d-block">
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </ngx-slick-carousel> -->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- about section end -->
+
+    <!-- Features start -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mb-5">
+                        <div class="small-title">Features</div>
+                        <h4>As featured in...</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row align-items-center pt-4">
+                <div class="col-md-6 col-sm-8">
+                    <div>
+                        <img src="assets/images/crypto/features-img/img-1.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                </div>
+                <div class="col-md-5 ms-auto">
+                    <div class="mt-4 mt-md-auto">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="features-number fw-semibold display-4 me-3">01</div>
+                            <h4 class="mb-0">Create and customize your in minutes</h4>
+                        </div>
+                        <p class="text-muted">Connect your TikTok, Instagram, Twitter, website, store, videos, music, podcast, events and more. It all comes together in a link in bio landing page designed to convert.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row align-items-center mt-5 pt-md-5">
+                <div class="col-md-5">
+                    <div class="mt-4 mt-md-0">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="features-number fw-semibold display-4 me-3">02</div>
+                            <h4 class="mb-0">Share your from your Instagram, TikTok, Twitter and other bios</h4>
+                        </div>
+                        <p class="text-muted">Add your unique Linktree URL to all the platforms and places you find your audience. Then use your QR code to drive your offline traffic online.
+                    </div>
+                </div>
+                <div class="col-md-6  col-sm-8 ms-md-auto">
+                    <div class="mt-4 me-md-0">
+                        <img src="assets/images/crypto/features-img/img-2.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row align-items-center pt-4">
+                <div class="col-md-6 col-sm-8">
+                    <div>
+                        <img src="assets/images/crypto/features-img/img-1.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                </div>
+                <div class="col-md-5 ms-auto">
+                    <div class="mt-4 mt-md-auto">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="features-number fw-semibold display-4 me-3">03</div>
+                            <h4 class="mb-0">Analyze your audience and keep your followers engaged</h4>
+                        </div>
+                        <p class="text-muted">Track your engagement over time, monitor revenue and learn what’s converting your audience. Make yourInformationd updates on the fly to keep them coming back. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Features end -->
+
+
+    <!-- Faqs start -->
+    <section class="section" id="faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mb-5">
+                        <div class="small-title">FAQs</div>
+                        <h4>Frequently asked questions</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="vertical-nav">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- <tabset [justified]="true" class="nav-pills custom-vertical-tabs">
+                                    <tab class="px-4"> -->
+                                        <ng-template tabHeading class="accordion-list collapsed">
+                                            <i class="bx bx-help-circle nav-icon d-block mb-2 "></i>
+                                            <p class="fw-bold mb-0">General Questions</p>
+                                        </ng-template>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4 class="card-title mb-4">General Questions</h4>
+                                                <!-- <accordion [closeOthers]="true" class="custom-accordion">
+                                                    <accordion-group heading="Why do I need a link in bio tool?" #faq class="accordion-list p-0"> -->
+                                                        <span accordion-heading class="float-end">
+                                                            <!-- <i class="mdi" [ngClass]="!faq?.isOpen ? 'mdi mdi-plus accor-plus-icon': 'mdi mdi-minus accor-plus-icon'"></i> -->
+                                                        </span>
+                                                        <div class="card-body p-0">
+                                                            <p class="mb-0">Right now, every time you’ve got something new to share, you have to go to every single one of your channels to change the link in each of your bios. It’s time-consuming and complicated – making it so much harder to keep everything up to date.
+
+                                                                A link in bio tool means you never have to compromise, or remove one link from your bio so you can add another. You can keep everything you want to share online in one link. When you’ve got a change, you only ever have to make it once.</p>
+                                                        </div>
+                                                    <!-- </accordion-group>
+                                                    <accordion-group heading="Why do we use it ?" #faq1 class="accordion-list p-0"> -->
+                                                        <span accordion-heading class="float-end">
+                                                            <!-- <i class="mdi" [ngClass]="!faq1?.isOpen ? 'mdi mdi-plus accor-plus-icon': 'mdi mdi-minus accor-plus-icon'"></i> -->
+                                                        </span>
+                                                        <div class="card-body p-0">
+                                                            <p class="mb-0">If several languages coalesce, the
+                                                                grammar
+                                                                of the resulting language is more simple and regular
+                                                                than that of the individual languages. The new
+                                                                common
+                                                                language will be more simple and regular than the
+                                                                existing European languages.</p>
+                                                        </div>
+                                                    <!-- </accordion-group> -->
+                                                        <span accordion-heading class="float-end">
+                                                            <!-- <i class="mdi" [ngClass]="!faq2?.isOpen ? 'mdi mdi-plus accor-plus-icon': 'mdi mdi-minus accor-plus-icon'"></i> -->
+                                                        </span>
+                                                        <div class="card-body p-0">
+                                                            <p class="mb-0">It will be as simple as Occidental; in
+                                                                fact,
+                                                                it will be Occidental. To an English person, it will
+                                                                seem like simplified English, as a skeptical
+                                                                Cambridge
+                                                                friend of mine told me what Occidental.</p>
+                                                        </div>
+                                                    <!-- </accordion-group> -->
+                                                   
+                                                <!-- </accordion> -->
+                                            </div>
+                                        </div>
+                                    <!-- </tab> -->
+                                  
+                                <!-- </tabset> -->
+                            </div>
+                            <div class="col-lg-10">
+                                <!-- <div [ngbNavOutlet]="nav"></div> -->
+                            </div>
+                        </div>
+                        <!-- end vertical nav -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Faqs end -->
+
+    <!-- Footer start -->
+    <footer class="landing-footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="mb-4 mb-lg-0">
+                        <h5 class="mb-3 footer-list-title">Company</h5>
+                        <ul class="list-unstyled footer-list-menu">
+                            <li><a href="javascript: void(0);">About Us</a></li>
+                            <li><a href="javascript: void(0);">Features</a></li>
+                            <li><a href="javascript: void(0);">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+              
+            </div>
+            <!-- end row -->
+
+            <hr class="footer-border my-5">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mb-4">
+                        <img src="assets/images/logo_gau.png" alt="" height="60">
+                    </div>
+
+                    <p class="mb-2">2024 © Your-information. Design & Develop by Themesbrand</p>
+                    <p>It will be as simple as occidental in fact, it will be to an english person, it will seem like
+                        simplified English, as a skeptical</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- Footer end -->

@@ -1,0 +1,118 @@
+<div class="container-fluid p-0">
+    <div class="row g-0">
+
+        <div class="col-xl-8">
+            <div class="auth-full-bg pt-lg-5 p-10">
+                <div class="w-100">
+                  
+                    <div class="d-flex h-100 flex-column">
+                        <div class="p-4 mt-auto">
+                            <div class="row justify-content-center mb10">
+                                <div class="col-lg-7">
+                                    <div class="text-center">
+                                        <h4 class="mb-3"><i
+                                                class="bx  text-primary h1 align-middle me-3"></i><span
+                                                class="text-primary">Everything you are.</span>+ 
+                                                 In one, simple link in bio.</h4>
+                                        <div>
+                                            <div class="py-3">
+                                                <p class="font-size-16 mb-4">" Join people using Your information for their link in bio. One link to help you share everything you create, curate and sell from your Instagram, TikTok, Twitter, YouTube and other social media profiles. "
+                                                </p>
+
+                                                <div>
+                                                    <h4 class="font-size-16 text-primary">Nana</h4>
+                                                    <p class="font-size-14 mb-0">- yourInformation User</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end col -->
+
+        <div class="col-xl-4">
+            <div class="auth-full-page-content p-md-5 p-4">
+                <div class="w-100">
+
+                    <div class="d-flex flex-column h-100">
+                        <div class="mb-4 mb-md-5">
+                            <a routerLink="/" >
+                                <img src="../../../assets/images/bia.jpg" alt="" height="55">
+                            </a>
+                        </div>
+                        <div class="my-auto">
+                            <div>
+                                <h5 class="text-primary">Welcome Back !</h5>
+                                <p class="text-muted">Sign in to continue to  &#160; 
+                                    <span class="text-black bg-info text-uppercase fs-5 fw-bolder   text-wrap">Minikidi</span>
+                                </p>
+                            </div>
+
+                            <div class="mt-4">
+                                <form (ngSubmit)="login()">
+                                    <div class="mb-3">
+                                        <label for="username">Username</label>
+                                        <input type="text" class="form-control" id="username" name="username" [(ngModel)]="credentials.username" required placeholder="Enter username">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="float-end">
+                                            <a routerLink="/auth/recoverpwd-2" class="text-muted">Forgot
+                                                password?</a>
+                                        </div>
+                                        <label for="userpassword">Password</label>
+                                        <div class="input-group auth-pass-inputgroup">
+                                            <input type="password" class="form-control" id="userpassword" name="password"
+                                            [(ngModel)]="credentials.password" required
+                                                placeholder="Enter password" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="remember-check">
+                                        <label class="form-check-label" for="remember-check">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <div class="mt-3 d-grid">
+                                        <button class="btn btn-primary btn-block" type="submit">Log In</button>
+                                    </div>
+                                </form>
+                                <div class="mt-5 text-center">
+                                    <p>Don't have an account ? <a [routerLink]="['/register']"
+                                            class="fw-medium text-primary"> Register </a> </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-4 mt-md-5 text-center">
+                        <p class="mb-0">©
+                            2024 yourInformation. Crafted with by
+                            Nana</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end col -->
+    </div>
+    <!-- end row -->
+</div>
+<!-- end container-fluid -->
+
+
+                                            
+                                            
+<!-- <div class="col-xl-3 col-lg-4 col-sm-6 mb-2">
+    <div class="p-3">
+      <p>A title with a text under</p>
+      <button type="button" class="btn btn-primary" id="sa-title" (click)="titleText()">Click me</button>
+    </div>
+  </div> -->
