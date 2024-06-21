@@ -1,14 +1,26 @@
 import { Routes } from '@angular/router';
 import { authGuard } from './core/guards/auth.guard';
-import { WebPublicComponent } from './web-public/web-public.component';
+import { WebPublicComponent } from './components/web-public/web-public.component';
 
 
 export const routes: Routes = [
+    // {
+    //     path: '',
+    //     redirectTo: 'login', // Redirect to login by default
+    //     pathMatch: 'full',
+    //   },
     {
-        path: '',
-        redirectTo: 'login', // Redirect to login by default
-        pathMatch: 'full',
-      },
+          path: '',
+          redirectTo: 'webpublic',
+          pathMatch: 'full',
+        },
+    {
+      path: 'webpublic',
+      loadComponent: () =>
+        import('./components/web-public/web-public.component').then(
+          (m) => m.WebPublicComponent
+        ),
+    },
       {
         path: 'login',
         loadComponent: () =>
@@ -39,12 +51,12 @@ export const routes: Routes = [
           ),
         canActivate: [authGuard],
       },
+     
       {
         path: '**',
         redirectTo: 'login',
         pathMatch: 'full',
       },
-      { path: 'webpublic', component: WebPublicComponent },
       // {
       //   path: 'webpublic',
       //   loadComponent: () =>
